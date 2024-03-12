@@ -7,8 +7,11 @@ export default function Movie() {
     const [searchMovie, setSearchMovie]=useState('')
     const [error ,setError] = useState(null)
     const [we,setWe] = useState()
+ 
     console.log(we);
     console.log(error);
+
+
     useEffect(()=>{
         const fetchMovie=async()=>{
             try {
@@ -37,7 +40,7 @@ export default function Movie() {
 
   return (
 
-    <div className="h-screen max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto">
     
            
             <div className="w-5/6 mx-auto mt-10 flex justify-center items-center ">

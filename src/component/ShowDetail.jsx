@@ -6,8 +6,7 @@ import { useParams } from "react-router-dom"
 export default function ShowDetail() {
     const {id} = useParams()
     const [movieShow,setMovieShow]=useState()
-    console.log(id);
-    console.log(movieShow);
+
     useEffect(()=>{
         const fetchMovie=async()=>{
             try {
@@ -19,7 +18,7 @@ export default function ShowDetail() {
             }
         }
         fetchMovie()
-    },[])
+    },[id])
 
   return (
     <div>

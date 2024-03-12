@@ -7,6 +7,7 @@ import Header from './component/Header'
 import Poke from './page/Poke'
 import Movie from './page/Movie'
 import ShowDetail from './component/ShowDetail'
+import Crud from './page/Crud'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
             <Route path='/m1' element={<Movie />}/>
             <Route path='/movie/:id' element={<ShowDetail />} />
             <Route path='/poke' element={<Poke />}/>
+            <Route path='/crud' element={<Crud />}/>
           </Routes>
         </BrowserRouter> 
       </Provider>
